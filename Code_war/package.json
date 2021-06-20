@@ -1,0 +1,11 @@
+{
+  "name": "code_war",
+  "version": "1.0.0",
+  "description": "",
+  "main": "splitStrings.js",
+  "scripts": {
+    "start": "nodemon splitStrings.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
