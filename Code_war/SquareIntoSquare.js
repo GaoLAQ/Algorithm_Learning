@@ -32,17 +32,7 @@ function sqaureNum(num){
 
 
 function decompose(n) {
-  let collection = [];
-  var sum = 0
-  for (var i =1; i<=n-1; i++){
-    sum += sqaureNum(i)
-    if(sum == n*n){
-      collection.push(i)
-      return collection 
-    } else {
-      i = i+1
-    }
-  }
+ 
 }
 
 console.log(decompose(50))
