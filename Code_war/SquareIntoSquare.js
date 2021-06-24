@@ -26,13 +26,26 @@
 // Note for Bash
 // decompose 50 returns "1,3,5,8,49"
 // decompose 4  returns "Nothing"
-function sqaureNum(num){
-  return num*num
-}
+// function sqaureNum(num){
+//   return num*num
+// }
 
 
-function decompose(n) {
+// function decompose(n) {
  
+// }
+
+// console.log(decompose(50))
+
+
+let tempObj = {
+  _num: 22,
+  get num() {
+    return this._num;
+ }
 }
 
-console.log(decompose(50))
+console.log(tempObj.num)
+// console.log(tempObj.['num'])
+// console.log(tempObj.num())
+console.log(tempObj._num)
