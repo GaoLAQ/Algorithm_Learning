@@ -26,11 +26,23 @@
 // Note for Bash
 // decompose 50 returns "1,3,5,8,49"
 // decompose 4  returns "Nothing"
+function sqaureNum(num){
+  return num*num
+}
+
 
 function decompose(n) {
-  var targetSum = n*n;
-  console.log()
-
+  let collection = [];
+  var sum = 0
+  for (var i =1; i<=n-1; i++){
+    sum += sqaureNum(i)
+    if(sum == n*n){
+      collection.push(i)
+      return collection 
+    } else {
+      i = i+1
+    }
+  }
 }
 
 console.log(decompose(50))

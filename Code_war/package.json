@@ -4,7 +4,7 @@
   "description": "",
   "main": "splitStrings.js",
   "scripts": {
-    "start": "nodemon SquareIntoSquares.js"
+    "start": "nodemon SquareIntoSquare.js"
   },
   "author": "",
   "license": "ISC"
