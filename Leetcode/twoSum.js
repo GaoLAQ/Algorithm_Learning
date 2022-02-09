@@ -1,5 +1,8 @@
+const { performance } = require('perf_hooks');
 const inputs = [3,1,4]; 
 const targetValue = 7; 
+
+var startTime = performance.now()
 
 var twoSum = function (nums, target){
   // for(let i =0; i<nums.length; i++){
@@ -9,6 +12,7 @@ var twoSum = function (nums, target){
   //     return [ paraIdx, i]
   //   }
   // }
+
   let map = new Map(); 
   for(let i=0; i< nums.length; i++){
     let para = target - nums[i]
@@ -20,4 +24,8 @@ var twoSum = function (nums, target){
   }
 }
 
+var endTime = performance.now()
+
 console.log(twoSum(inputs, targetValue))
+
+console.log((endTime-startTime))
