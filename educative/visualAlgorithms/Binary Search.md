@@ -14,8 +14,8 @@
    right: last of array \
    mid(guess): (left + right) /2
 2. Define left and right relationship \
-    left < right (normal case) \
-    right < left (special case)
+   left < right (normal case) \
+   right < left (special case)
 3. Define relationship among left, right and mid
    mid = taget return result
    mid > left return mid right -1
