@@ -1,23 +1,33 @@
 const longest_substring_with_k_distinct = function (str, k) {
-  let left = 0;
-  let right = 1; 
-  let count = 0;
-  let leftArr= [];
-  let rightArr = []
-  let arr = str
-  for (right; right < arr.length; right++) {
-    if (arr[left] === arr[right]) {
-      count++
-      if(count === k){
-        leftArr.push(left)
-        rightArr.push(right)
+    let left = 0; 
+    let maxLength = 0;
+    let hashMap = {}; 
+    for(let right = 0; right< str.length; right++){
+      let rightChar = str[right]
+      if(!(rightChar in hashMap)){
+        hashMap[rightChar] = 0 
       }
-    } else {
-      left +=1
+      hashMap[rightChar] +=1; 
+      while(Object.keys(hashMap).length>k){
+        let leftChar = str[left]
+        hashMap[leftChar]-=1
+        console.log(hashMap)
+        if(hashMap[leftChar] ===0){
+          delete hashMap[leftChar]
+        }
+        left +=1
+      }
+      maxLength = Math.max(maxLength, right-left +1)
     }
-  }
-  console.log(count, str, "k: ", k, Math.max(...leftArr), Math.max(...rightArr))
-  return Math.max(...rightArr) - Math.max(...leftArr) +1 
+    return maxLength 
 };
 
+
+
 console.log(longest_substring_with_k_distinct('araaci',2))
+
+// const hashMap = {id:1, name:"noob gao"}
+
+// console.log(id in hashMap)
+
+
