@@ -8,7 +8,6 @@ Binary Search Problem
 
 ## Logic:
 
-- presudo code 
 1) Define left variable and right variable, define mid \
 left: beginning of array \
 right: last of array \
