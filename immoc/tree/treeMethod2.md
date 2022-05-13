@@ -2,7 +2,7 @@
 
 > 这是非递归方法 解决先中后序的问题，中心思想为 stack 解决方案
 
-### 非递归 先序遍历 
+### 非递归 先序遍历 preorder
 
 ```
 const preorder = (root) => {
@@ -21,7 +21,7 @@ const preorder = (root) => {
 }
 ```
 
-### 非递归 中序遍历
+### 非递归 中序遍历 inorder
 
 ```
 const inorder = (root) => {
@@ -40,7 +40,7 @@ const inorder = (root) => {
 }
 ```
 
-### 非递归 后序遍历
+### 非递归 后序遍历 postorder
 
 ```
 const postorder = (root) =>{
