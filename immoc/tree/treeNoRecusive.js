@@ -1,4 +1,3 @@
-// This is a practise of to know preorder, inorder, postorder to know what is actually order to make a final output
 const root = {
     val:'A',
     left:{
@@ -45,32 +44,35 @@ const root = {
     }
 }
 
-// Understand the recursive method: 
-// step 1: big cluster -> take part left and right gradually 
-const preorder = (root)=>{
-    if(!root){return }
-    console.log(root.val)
-    preorder(root.left)
-    preorder(root.right)
-}
-preorder(root);
+// no recusive 
+// stack.pop()  output item being deleted 
+
+// const preorder = (root)=>{
+//     if(!root){ return }
+//     const stack = [root]
+//     while(stack.length){
+//         const n = stack.pop()
+//         if(n.left){stack.push(n.left)}
+//         if(n.right){stack.push(n.right)}
+//         console.log(stack)
+//     }
+// }
+
+// preorder(root)
 
 const inorder = (root)=>{
     if(!root){return}
-    inorder(root.left)
-    console.log(root.val)
-    inorder(root.right)
+    const stack = []
+    let p = root 
+
+    while(p){
+        stack.push(p)
+        p = p.left    
+        console.log(stack)
+    }
+    const n = stack.push()
+    p = n.right
+
 }
+
 inorder(root)
-
-const postorder = (root)=>{
-    if(!root){return}
-    postorder(root.left)
-    postorder(root.right)
-    console.log(root.val)
-}
-postorder(root)
-
-
-
-
