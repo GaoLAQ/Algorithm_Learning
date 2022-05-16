@@ -16,7 +16,7 @@ JS 中没有图，但是可以用object 和 array 构建的图
 
 #### JS邻接矩阵
 
-![image](https://user-images.githubusercontent.com/61554320/168600059-2075bb41-dd11-4edd-aa0f-7d4e90b25bf8.png)
+![image](https://user-images.githubusercontent.com/61554320/168601494-3fc6a3ce-2d86-4eab-82cf-9467c25762fd.png)
 
 从数列开始 A->B, 1 紧接着第二个数
 
