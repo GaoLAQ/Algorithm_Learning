@@ -64,15 +64,15 @@ const inorder = (root)=>{
     if(!root){return}
     const stack = []
     let p = root 
-
-    while(p){
-        stack.push(p)
-        p = p.left    
-        console.log(stack)
+    while(p || stack.length){
+        while(p){
+            stack.push(p)
+            p = p.left  
+        }
+        const n = stack.pop()
+        console.log(n.val)
+        p = n.right
     }
-    const n = stack.push()
-    p = n.right
-
 }
 
 inorder(root)

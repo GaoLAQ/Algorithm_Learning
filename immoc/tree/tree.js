@@ -46,7 +46,7 @@ const root = {
 }
 
 // Understand the recursive method: 
-// step 1: big cluster -> take part left and right gradually 
+// step 1: big cluster -> take part left and right 
 const preorder = (root)=>{
     if(!root){return }
     console.log(root.val)

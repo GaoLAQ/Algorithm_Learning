@@ -133,25 +133,6 @@ const inorder = (root) => {
     val: 'A',
     left: { val: 'B', left: [Object], right: [Object] },
     right: { val: 'C', left: [Object], right: [Object] }
-  }
-]
-[
-  {
-    val: 'A',
-    left: { val: 'B', left: [Object], right: [Object] },
-    right: { val: 'C', left: [Object], right: [Object] }
-  },
-  {
-    val: 'B',
-    left: { val: 'D', left: [Object], right: [Object] },
-    right: { val: 'E', left: null, right: null }
-  }
-]
-[
-  {
-    val: 'A',
-    left: { val: 'B', left: [Object], right: [Object] },
-    right: { val: 'C', left: [Object], right: [Object] }
   },
   {
     val: 'B',
@@ -179,17 +160,72 @@ const inorder = (root) => {
     val: 'D',
     left: { val: 'E', left: null, right: [Object] },
     right: { val: 'F', left: null, right: null }
-  },
-  {
-    val: 'E',
-    left: null,
-    right: { val: 'G', left: null, right: null }
   }
 ]
-
+[
+  {
+    val: 'A',
+    left: { val: 'B', left: [Object], right: [Object] },
+    right: { val: 'C', left: [Object], right: [Object] }
+  },
+  {
+    val: 'B',
+    left: { val: 'D', left: [Object], right: [Object] },
+    right: { val: 'E', left: null, right: null }
+  }
+]
+[
+  {
+    val: 'A',
+    left: { val: 'B', left: [Object], right: [Object] },
+    right: { val: 'C', left: [Object], right: [Object] }
+  },
+  {
+    val: 'B',
+    left: { val: 'D', left: [Object], right: [Object] },
+    right: { val: 'E', left: null, right: null }
+  }
+]
+[
+  {
+    val: 'A',
+    left: { val: 'B', left: [Object], right: [Object] },
+    right: { val: 'C', left: [Object], right: [Object] }
+  }
+]
+[
+  {
+    val: 'A',
+    left: { val: 'B', left: [Object], right: [Object] },
+    right: { val: 'C', left: [Object], right: [Object] }
+  }
+]
+[]
+[
+  {
+    val: 'C',
+    left: { val: 'G', left: [Object], right: null },
+    right: { val: 'I', left: null, right: null }
+  },
+  {
+    val: 'G',
+    left: { val: 'H', left: null, right: null },
+    right: null
+  }
+]
+[
+  {
+    val: 'C',
+    left: { val: 'G', left: [Object], right: null },
+    right: { val: 'I', left: null, right: null }
+  }
+]
+[]
+[]
 ```
 
-### 非递归 后序遍历
+
+### 非递归 后序遍历
 
 ```
 const postorder = (root) =>{
@@ -213,6 +249,3 @@ const postorder = (root) =>{
     }
 }
 ```
-
-
-
