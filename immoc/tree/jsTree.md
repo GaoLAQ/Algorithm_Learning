@@ -35,8 +35,6 @@ graph TD;
    3. 看EG 子树， E-G 
    4. 总结：CBEGDFA
 
-![图 3](../../../images/10d99880b92d6421b473f68ffec245a73f4f9027287e60c67a7d55dcaf47d10c.png)  
-
 ### 后序遍历二叉树 左右根
 口诀：
    1. 以左开始C, 右(DEFG), 根(B)// C-DEFG-B-A
@@ -44,7 +42,6 @@ graph TD;
    3. 看EG 子树， G-E
    4. 总结：CGEFDBA
    
-![图 4](../../../images/d36f73c4e2822bc343073ed4d0361973cf98489b8e4e63d677ea0744df77d127.png)  
 
 ## JS data structure 
 > Object in object 
