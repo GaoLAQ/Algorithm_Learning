@@ -5,7 +5,6 @@
 
 >二叉树的子树有左右之分，其次序不能任意颠倒
 
-![图 1](../../../images/4e27df10eda1500cd8e477676ea67781c6732c36ba3bbeb87edf7c8c9e802b3d.png?style=center)  
 
 ---
 ## 遍历
