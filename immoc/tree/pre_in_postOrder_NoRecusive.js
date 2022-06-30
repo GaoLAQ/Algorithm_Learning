@@ -90,3 +90,5 @@ const postorder = (root)=>{
         console.log(n.val)
     }
 }
+
+console.log('this is postorder calling', postorder(root))
