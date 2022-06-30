@@ -58,7 +58,9 @@ const preorder = (root)=>{
         if(n.left){stack.push(n.left)}
     }
 }
+
 console.log('this is preorder calling',preorder(root))
+
 // inorder
 const inorder = (root)=>{
     if(!root) return  
@@ -73,7 +75,9 @@ const inorder = (root)=>{
         p = n.right 
     } 
 }
+
 console.log('this is inorder calling',inorder(root))
+
 // outorder 
 const postorder = (root)=>{
     if(!root) return  
