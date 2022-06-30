@@ -53,9 +53,9 @@ const preorder = (root)=>{
     const stack = [root]
     while(stack.length){
         const n = stack.pop()
-        if(n.left){stack.push(n.left)}
-        if(n.right){stack.push(n.right)}
         console.log(stack)
+        if(n.right){stack.push(n.right)} //* 因为是stack 所以后进先出， 所以right 前进， 然后left。 这样 根左右， 左前被call  
+        if(n.left){stack.push(n.left)}
     }
 }
 console.log('this is preorder calling',preorder(root))
